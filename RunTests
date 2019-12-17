@@ -1,0 +1,57 @@
+#!/bin/sh
+
+# This script run all the tests
+
+# Pressure p 
+cd ./getPressure
+make -f Makefile
+./tst
+make clean
+
+# Temperature T
+cd ../getTemperature_from_e
+make -f Makefile
+./tst
+make clean
+
+# Temperature from EOS T
+cd ../getTemperature_from_EOS
+make -f Makefile
+./tst
+make clean
+
+# Molar volume molarVolume
+cd ../getMolarVolume
+make -f Makefile
+./tst
+make clean
+
+# Density D
+cd ../getDensity
+make -f Makefile
+./tst
+make clean
+
+# Enthalpy h
+cd ../getEnthalpy
+make -f Makefile
+./tst
+make clean
+
+# Mass diffusion factor alpha_D
+cd ../getAlpha_D
+make -f Makefile
+./tst
+make clea
+
+# Molar specific heat at constant pressure Cp
+cd ../getCp
+make -f Makefile
+./tst
+make clean
+
+# Spped of sound spSound
+cd ../getspSound
+make -f Makefile
+./tst
+make clean
